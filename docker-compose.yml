@@ -1,8 +1,0 @@
-﻿version: '3.7'
-
-services:
-    crm-site:
-        build: .
-        container_name: crm-site
-        ports:
-            - 10000:80
