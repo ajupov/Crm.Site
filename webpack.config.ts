@@ -5,7 +5,7 @@ import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import copyWebpackPlugin from 'copy-webpack-plugin'
 
-const webpackConfig: Configuration = {
+const webpackConfig: (env: any, options: any) => Configuration = (_, { mode }) => ({
     target: 'web',
     entry: './src/index.tsx',
     output: {
@@ -13,8 +13,7 @@ const webpackConfig: Configuration = {
         path: resolve(__dirname, 'dist'),
         publicPath: ''
     },
-
-    devtool: 'inline-source-map',
+    devtool: mode === 'development' ? 'inline-source-map' : false,
     resolve: {
         extensions: ['.js', '.ts', '.tsx', '.json']
     },
@@ -72,6 +71,6 @@ const webpackConfig: Configuration = {
             }
         ])
     ]
-}
+})
 
 export default webpackConfig

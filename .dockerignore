@@ -1,0 +1,9 @@
+.git
+.gitignore
+README.md
+Dockerfile
+.github
+.drone.yml
+.prettierrc.json
+dist
+node_modules

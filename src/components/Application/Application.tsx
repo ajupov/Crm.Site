@@ -6,7 +6,7 @@ import { NotFound } from '../../pages/NotFound/NotFound'
 import React from 'react'
 
 export const Application = () => (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />

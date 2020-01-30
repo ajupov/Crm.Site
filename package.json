@@ -6,6 +6,7 @@
     "author": "U. Ajupov",
     "license": "MIT",
     "private": true,
+    "homepage": "/",
     "repository": {
         "type": "git",
         "url": "https://github.com/ajupov/Crm.Site.git"
