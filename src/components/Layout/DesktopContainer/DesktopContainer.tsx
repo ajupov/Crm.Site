@@ -2,9 +2,10 @@ import { Container, Menu, Responsive, Segment } from 'semantic-ui-react'
 import React, { FC } from 'react'
 
 import { DesktopMenu } from './DesktopMenu'
+import { FooterSegment } from '../FooterSegment/FooterSegment'
 
 interface IDesktopContainerProps {
-    children: JSX.Element | JSX.Element[]
+    children?: JSX.Element | JSX.Element[]
 }
 
 export const DesktopContainer: FC<IDesktopContainerProps> = ({ children }) => (
@@ -17,5 +18,6 @@ export const DesktopContainer: FC<IDesktopContainerProps> = ({ children }) => (
             </Container>
         </Segment>
         {children}
+        <FooterSegment />
     </Responsive>
 )

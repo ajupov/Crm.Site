@@ -2,8 +2,10 @@ import { Menu, Responsive, Segment, Sidebar } from 'semantic-ui-react'
 import { MobileMenu, MobileSidebarMenu } from './MobileMenu'
 import React, { FC, useState } from 'react'
 
+import { FooterSegment } from '../FooterSegment/FooterSegment'
+
 interface IMobileContainerProps {
-    children: JSX.Element | JSX.Element[]
+    children?: JSX.Element | JSX.Element[]
 }
 
 export const MobileContainer: FC<IMobileContainerProps> = ({ children }) => {
@@ -32,6 +34,7 @@ export const MobileContainer: FC<IMobileContainerProps> = ({ children }) => {
                     </Menu>
                 </Segment>
                 {children}
+                <FooterSegment />
             </Sidebar.Pusher>
         </Responsive>
     )
