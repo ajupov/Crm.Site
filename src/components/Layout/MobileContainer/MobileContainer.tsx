@@ -11,8 +11,13 @@ interface IMobileContainerProps {
 export const MobileContainer: FC<IMobileContainerProps> = ({ children }) => {
     const [isSidebarMenuVisible, setSidebarMenuVisible] = useState(false)
 
-    const showMenu = () => setSidebarMenuVisible(true)
-    const hideMenu = () => setSidebarMenuVisible(false)
+    const showMenu = (): void => {
+        setSidebarMenuVisible(true)
+    }
+
+    const hideMenu = (): void => {
+        setSidebarMenuVisible(false)
+    }
 
     return (
         <Responsive as={Sidebar.Pushable} maxWidth={Responsive.onlyMobile.maxWidth}>

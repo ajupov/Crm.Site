@@ -1,13 +1,15 @@
 import { Container, Segment } from 'semantic-ui-react'
 import React, { FC } from 'react'
 
+import { Configuration } from './../../../configuration/Configuration'
+
 export const ApiSegment: FC = () => (
     <Segment style={{ padding: '8em 0em' }} vertical>
         <Container text>
             <p style={{ fontSize: '1.33em' }}>
                 Swagger-generated описание OAuth:
                 <br />
-                <a href="http://identity.litecrm.org">http://identity.litecrm.org</a>
+                <a href={Configuration.OauthUrl}>{Configuration.OauthUrl}</a>
                 <br />
                 <br />
                 Для добавления OAuth входа для Вашего приложения вы можете написать по адресу:
@@ -22,7 +24,7 @@ export const ApiSegment: FC = () => (
             <p style={{ fontSize: '1.33em' }}>
                 Swagger-generated описание API:
                 <br />
-                <a href="http://api.litecrm.org">http://api.litecrm.org</a>
+                <a href={Configuration.ApiUrl}>{Configuration.ApiUrl}</a>
             </p>
         </Container>
     </Segment>

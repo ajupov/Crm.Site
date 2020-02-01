@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import React, { FC } from 'react'
 
 import { About } from '../../pages/About/About'
 import { Api } from '../../pages/Api/Api'
@@ -6,10 +7,9 @@ import { Contacts } from '../../pages/Contacts/Contacts'
 import { Home } from '../../pages/Home/Home'
 import { NotFound } from '../../pages/NotFound/NotFound'
 import { Plans } from '../../pages/Plans/Plans'
-import React from 'react'
 import { SiteMap } from '../../pages/SiteMap/SiteMap'
 
-export const Application = () => (
+export const Application: FC = () => (
     <BrowserRouter>
         <Switch>
             <Route path="/" exact component={Home} />

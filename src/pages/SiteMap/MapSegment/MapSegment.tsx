@@ -9,7 +9,7 @@ export const MapSegment: FC = () => (
             <List.Item>
                 <List.Icon name="folder open" />
                 <List.Content>
-                    <List.Header>/</List.Header>
+                    <List.Header>{'/'}</List.Header>
                     <List.Description>Главная</List.Description>
                     <List.List>
                         <MapSegmentItem path="about" description="О нас" />

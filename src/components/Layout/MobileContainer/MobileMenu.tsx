@@ -1,14 +1,14 @@
 import { Button, Icon, Menu } from 'semantic-ui-react'
+import React, { FC } from 'react'
 
 import { ActiveMenuItem } from '../../../components/ActiveMenuItem/ActiveMenuItem'
-import { Configuration } from '../../../configuration/settings'
-import React from 'react'
+import { Configuration } from '../../../configuration/Configuration'
 
 interface IMobileMenuProps {
     onClickShow: () => void
 }
 
-export const MobileSidebarMenu = () => (
+export const MobileSidebarMenu: FC = () => (
     <>
         <ActiveMenuItem path="/">Главная</ActiveMenuItem>
         <ActiveMenuItem path="/about">О нас</ActiveMenuItem>
@@ -21,7 +21,7 @@ export const MobileSidebarMenu = () => (
     </>
 )
 
-export const MobileMenu = ({ onClickShow }: IMobileMenuProps) => (
+export const MobileMenu: FC<IMobileMenuProps> = ({ onClickShow }) => (
     <>
         <Menu.Item onClick={onClickShow}>
             <Icon name="sidebar" />
