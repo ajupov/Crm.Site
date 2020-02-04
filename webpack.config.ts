@@ -2,6 +2,7 @@ import { Configuration, HotModuleReplacementPlugin } from 'webpack'
 import { join, resolve } from 'path'
 
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import Dotenv from 'dotenv-webpack'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import copyWebpackPlugin from 'copy-webpack-plugin'
@@ -65,6 +66,9 @@ const webpackConfig: (env: any, options: any) => Configuration = (_, { mode }) =
             favicon: resolve(__dirname, 'public/content/images/favicon.ico')
         }),
         new ForkTsCheckerWebpackPlugin({ eslint: true }),
+        new Dotenv({
+            path: resolve(__dirname, `./config/${mode}.env`)
+        }),
         new copyWebpackPlugin([
             {
                 from: 'public/content/**/*',

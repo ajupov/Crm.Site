@@ -1,5 +1,5 @@
 export const Configuration = {
-    OauthUrl: 'http://identity.litecrm.org',
-    ApiUrl: 'http://api.litecrm.org',
-    MainUrl: 'http://litecrm.org/Products/v1/GetTypes'
+    AuthUrl: process.env.AUTH_URL,
+    OauthSwaggerUrl: process.env.OAUTH_SWAGGER_URL,
+    ApiSwaggerUrl: process.env.API_SWAGGER_URL
 }

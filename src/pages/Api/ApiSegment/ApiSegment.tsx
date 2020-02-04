@@ -9,7 +9,7 @@ export const ApiSegment: FC = () => (
             <p style={{ fontSize: '1.33em' }}>
                 Swagger-generated описание OAuth:
                 <br />
-                <a href={Configuration.OauthUrl}>{Configuration.OauthUrl}</a>
+                <a href={Configuration.OauthSwaggerUrl}>{Configuration.OauthSwaggerUrl}</a>
                 <br />
                 <br />
                 Для добавления OAuth входа для Вашего приложения вы можете написать по адресу:
@@ -24,7 +24,7 @@ export const ApiSegment: FC = () => (
             <p style={{ fontSize: '1.33em' }}>
                 Swagger-generated описание API:
                 <br />
-                <a href={Configuration.ApiUrl}>{Configuration.ApiUrl}</a>
+                <a href={Configuration.ApiSwaggerUrl}>{Configuration.ApiSwaggerUrl}</a>
             </p>
         </Container>
     </Segment>
