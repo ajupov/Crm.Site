@@ -1,5 +1,5 @@
 export interface IConfiguration {
-    readonly AuthUrl: string
+    readonly LoginUrl: string
     readonly OauthSwaggerUrl: string
     readonly ApiSwaggerUrl: string
 }

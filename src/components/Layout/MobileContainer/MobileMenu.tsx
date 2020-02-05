@@ -15,11 +15,8 @@ export const MobileSidebarMenu: FC = () => {
         <>
             <ActiveMenuItem path="/">Главная</ActiveMenuItem>
             <ActiveMenuItem path="/about">О нас</ActiveMenuItem>
-            <Menu.Item as="a" href={configuration.AuthUrl}>
+            <Menu.Item as="a" href={configuration.LoginUrl}>
                 Войти
-            </Menu.Item>
-            <Menu.Item as="a" href={configuration.AuthUrl}>
-                Зарегистрироваться
             </Menu.Item>
         </>
     )
@@ -34,11 +31,8 @@ export const MobileMenu: FC<IMobileMenuProps> = ({ onClickShow }) => {
                 <Icon name="sidebar" />
             </Menu.Item>
             <Menu.Item position="right">
-                <Button as="a" href={configuration.AuthUrl} inverted>
+                <Button as="a" href={configuration.LoginUrl} inverted>
                     Войти
-                </Button>
-                <Button as="a" href={configuration.AuthUrl} inverted style={{ marginLeft: '0.5em' }}>
-                    Зарегистрироваться
                 </Button>
             </Menu.Item>
         </>

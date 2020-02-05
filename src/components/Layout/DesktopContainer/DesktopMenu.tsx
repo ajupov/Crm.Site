@@ -12,11 +12,8 @@ export const DesktopMenu: FC = () => {
             <ActiveMenuItem path="/">Главная</ActiveMenuItem>
             <ActiveMenuItem path="/about">О нас</ActiveMenuItem>
             <Menu.Item position="right">
-                <Button inverted as="a" href={configuration.AuthUrl}>
+                <Button inverted as="a" href={configuration.LoginUrl}>
                     Войти
-                </Button>
-                <Button inverted as="a" href={configuration.AuthUrl} style={{ marginLeft: '0.5em' }}>
-                    Зарегистрироваться
                 </Button>
             </Menu.Item>
         </>
