@@ -7,6 +7,7 @@ RUN yarn
 
 COPY public/ ./public
 COPY src/ ./src
+COPY config/ ./config
 COPY tsconfig.json ./
 COPY webpack.config.ts ./
 RUN yarn build-prod
