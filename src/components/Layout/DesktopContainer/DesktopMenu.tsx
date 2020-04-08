@@ -2,7 +2,7 @@ import { Button, Menu } from 'semantic-ui-react'
 import React, { FC } from 'react'
 
 import { ActiveMenuItem } from '../../../components/ActiveMenuItem/ActiveMenuItem'
-import Configuration from '../../../config/Configuration'
+import Configuration from '../../../configuration/Configuration'
 
 export const DesktopMenu: FC = () => {
     const configuration = new Configuration()

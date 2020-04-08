@@ -2,7 +2,7 @@ import { Button, Icon, Menu } from 'semantic-ui-react'
 import React, { FC } from 'react'
 
 import { ActiveMenuItem } from '../../../components/ActiveMenuItem/ActiveMenuItem'
-import Configuration from '../../../config/Configuration'
+import Configuration from '../../../configuration/Configuration'
 
 interface IMobileMenuProps {
     onClickShow: () => void

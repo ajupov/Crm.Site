@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import React, { FC } from 'react'
 
-import { About } from '../../pages/About/About'
-import { Api } from '../../pages/Api/Api'
-import { Contacts } from '../../pages/Contacts/Contacts'
-import { Home } from '../../pages/Home/Home'
-import { NotFound } from '../../pages/NotFound/NotFound'
-import { Plans } from '../../pages/Plans/Plans'
-import { SiteMap } from '../../pages/SiteMap/SiteMap'
+import { About } from '../../pages/about/About'
+import { Api } from '../../pages/api/Api'
+import { Contacts } from '../../pages/contacts/Contacts'
+import { Home } from '../../pages/home/Home'
+import { NotFound } from '../../pages/notFound/NotFound'
+import { Plans } from '../../pages/plans/Plans'
+import { SiteMap } from '../../pages/siteMap/SiteMap'
 
 export const Application: FC = () => (
     <BrowserRouter>

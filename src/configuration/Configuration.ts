@@ -1,6 +1,4 @@
-import { IConfiguration } from './IConfiguration'
-
-export default class Configuration implements IConfiguration {
+export default class Configuration {
     get LoginUrl(): string {
         const url = process.env.LOGIN_URL
         if (!url) {

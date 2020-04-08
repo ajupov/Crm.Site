@@ -1,7 +1,7 @@
 import { Container, Segment } from 'semantic-ui-react'
 import React, { FC } from 'react'
 
-import Configuration from '../../../config/Configuration'
+import Configuration from '../../../configuration/Configuration'
 
 export const ApiSegment: FC = () => {
     const configuration = new Configuration()
