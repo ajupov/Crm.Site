@@ -4,7 +4,6 @@ import { AboutSegment } from './AboutSegment/AboutSegment'
 import { BannerSegment } from './BannerSegment/BannerSegment'
 import { Layout } from '../../components/Layout/Layout'
 import { MissionSegment } from './MissionSegment/MissionSegment'
-import { NewsSegment } from './NewsSegment/NewsSegment'
 
 export const Home: FC = () => {
     useEffect(() => {
@@ -14,9 +13,8 @@ export const Home: FC = () => {
     return (
         <Layout>
             <BannerSegment />
-            <MissionSegment />
             <AboutSegment />
-            <NewsSegment />
+            <MissionSegment />
         </Layout>
     )
 }

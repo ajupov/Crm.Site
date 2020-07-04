@@ -8,7 +8,7 @@ export const FooterSegment: FC = () => (
         <Container>
             <Grid divided inverted stackable>
                 <Grid.Row>
-                    <Grid.Column width={3}>
+                    <Grid.Column width={5}>
                         <Header inverted as="h4">
                             Дополнительно
                         </Header>
@@ -24,7 +24,35 @@ export const FooterSegment: FC = () => (
                             </List.Item>
                         </List>
                     </Grid.Column>
-                    <Grid.Column width={3}>
+                    <Grid.Column width={5}>
+                        <Header inverted as="h4">
+                            Информация
+                        </Header>
+                        <List link inverted>
+                            <List.Item
+                                as="a"
+                                target="blank"
+                                href="https://docs.google.com/document/d/1BkQ8f8y5huRluvxZkbxPq7NOAJFEa3wL_cH3J-QqbLI"
+                            >
+                                Лицензионное соглашение
+                            </List.Item>
+                            <List.Item
+                                as="a"
+                                target="blank"
+                                href="https://docs.google.com/document/d/1NZK-OuTtHF9kq5xV_IhgaT64TcoBrMr48_KuN3LIpsM"
+                            >
+                                Политика в отношении обработки персональных данных
+                            </List.Item>
+                            <List.Item
+                                as="a"
+                                target="blank"
+                                href="https://docs.google.com/document/d/1cl1R2lMWZSgIMMhoymYhbRU8rlBq3e_dOhYsxe7586E"
+                            >
+                                Безопасность и надежность
+                            </List.Item>
+                        </List>
+                    </Grid.Column>
+                    <Grid.Column width={5}>
                         <Header inverted as="h4">
                             Сервисы
                         </Header>
@@ -34,35 +62,8 @@ export const FooterSegment: FC = () => (
                             </List.Item>
                         </List>
                     </Grid.Column>
-                    <Grid.Column width={3}>
-                        <Header inverted as="h4">
-                            Информация
-                        </Header>
-                        <List link inverted>
-                            <List.Item
-                                as="a"
-                                target="blank"
-                                href="https://docs.google.com/document/d/1BkQ8f8y5huRluvxZkbxPq7NOAJFEa3wL_cH3J-QqbLI/edit"
-                            >
-                                Лицензионное соглашение
-                            </List.Item>
-                            <List.Item
-                                as="a"
-                                target="blank"
-                                href="https://docs.google.com/document/d/1NZK-OuTtHF9kq5xV_IhgaT64TcoBrMr48_KuN3LIpsM/edit?usp=sharing"
-                            >
-                                Политика в отношении обработки персональных данных
-                            </List.Item>
-                            <List.Item
-                                as="a"
-                                target="blank"
-                                href="https://docs.google.com/document/d/1cl1R2lMWZSgIMMhoymYhbRU8rlBq3e_dOhYsxe7586E/edit?usp=sharing"
-                            >
-                                Безопасность и надежность
-                            </List.Item>
-                        </List>
-                    </Grid.Column>
-                    <Grid.Column width={7}>
+
+                    {/* <Grid.Column width={7}>
                         <Header as="h4" inverted>
                             СМИ
                         </Header>
@@ -77,7 +78,7 @@ export const FooterSegment: FC = () => (
                                 <Icon name="odnoklassniki" />
                             </List.Item>
                         </List>
-                    </Grid.Column>
+                    </Grid.Column> */}
                 </Grid.Row>
             </Grid>
         </Container>

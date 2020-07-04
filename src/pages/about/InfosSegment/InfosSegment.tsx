@@ -7,10 +7,6 @@ export const InfosSegment: FC = () => (
     <Segment style={{ padding: '8em 0em' }} vertical>
         <Container text>
             <InfoItem />
-            <InfoItem />
-            <InfoItem />
-            <InfoItem />
-            <InfoItem />
         </Container>
     </Segment>
 )

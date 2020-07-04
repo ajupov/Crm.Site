@@ -1,4 +1,4 @@
-import { Grid, Header, Image, Segment } from 'semantic-ui-react'
+import { Grid, Header, Segment } from 'semantic-ui-react'
 import React, { FC } from 'react'
 
 export const AboutSegment: FC = () => (
@@ -7,17 +7,24 @@ export const AboutSegment: FC = () => (
             <Grid.Row textAlign="center">
                 <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
                     <Header as="h3" style={{ fontSize: '2em' }}>
-                        О компании
+                        О нас
                     </Header>
-                    <p style={{ fontSize: '1.33em' }}>Вот что говорят о нас</p>
+                    <p style={{ fontSize: '1.33em' }}>
+                        Мы небольшая компания, которая хочет облегчить операционную деятельность таких же небольших
+                        компаний
+                    </p>
+                    <p style={{ fontSize: '1.33em' }}>
+                        Мы хотим быстро и гибко предоставлять новые возможности для автоматизации и тем самым принося им
+                        ценность
+                    </p>
                 </Grid.Column>
                 <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
                     <Header as="h3" style={{ fontSize: '2em' }}>
-                        Отличная компания
+                        Связь с нами
                     </Header>
+                    <p style={{ fontSize: '1.33em' }}>Вы можете связаться с нами по адресу:</p>
                     <p style={{ fontSize: '1.33em' }}>
-                        <Image avatar src="./content/client-avatar-micro.jpg" />
-                        Усман Аюпов
+                        <a href="mailto:support@litecrm.org">support@litecrm.org</a>
                     </p>
                 </Grid.Column>
             </Grid.Row>
