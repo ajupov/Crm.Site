@@ -1,4 +1,4 @@
-import { Container, Grid, Header, Icon, List, Segment } from 'semantic-ui-react'
+import { Container, Grid, Header, List, Segment } from 'semantic-ui-react'
 import React, { FC } from 'react'
 
 import { Link } from 'react-router-dom'
